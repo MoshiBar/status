@@ -143,10 +143,10 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
+    - name: Connectivity
+      description: Server base internet connectivity
       closed: true
-    - name: Empty Category
+    - name: Services
     - name: Uncategorized
       untitled: true
 
@@ -158,20 +158,18 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
+    - name: Main Server
+      category: Connectivity
+    - name: Fedi Instance
+      description: Main Service, Iceshrimp Instance
+      category: Services
+      link: https://ambrosia.moe/
     - name: API
       description: The guts of the application.
       category: Uncategorized
     - name: Media Proxy
       description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+      category: Connectivity
 
   # What date format to use?
   #
@@ -348,7 +346,7 @@ params:
   #
   # Default: `true`
   # BOOLEAN; `true`, `false`
-  alwaysKeepBrandColor: true
+  alwaysKeepBrandColor: false
 
   # Introduced in v4.0.1 for consistent
   # site title text color.
